@@ -1,0 +1,885 @@
+:root {
+  --primary: rgb(220, 0, 0);
+  --black: #333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+
+header {
+  display: flex;
+  padding: 13px 200px;  
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+
+/* LOGO */
+/* LOGO */
+/* LOGO */
+
+.headerLogo {
+  display: flex;
+  font-size: 14px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.headerLogo a {
+  color: black;
+  text-decoration: none;
+}
+
+.headerLogoText span {
+  color: var(--primary);
+  font-size: 34px;
+}
+
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.headerNav {
+  display: flex;
+}
+
+.headerNavItem {
+  list-style: none;
+  text-decoration: underline;
+}
+
+.headerNavItem a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 15px;
+  padding: 8px 15px;
+}
+
+.loginButton {
+  padding: 10px 10px;
+  background-color: var(--primary);
+  list-style: none;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary);
+  margin-left: 20px;
+}
+
+.loginButton a {
+  color: #fff;
+  list-style: none;
+}
+
+.loginButton:hover {
+  color: var(--primary);
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3);
+  background: none;
+}
+
+.loginButton i {
+  padding-left: 10px;
+}
+
+/* SECTION BERANDA */
+/* SECTION BERANDA */
+/* SECTION BERANDA */
+.slideOne {
+  padding: 150px 0px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.homeText {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.homeTextTitle {
+  color: #333;
+  font-size: 40px;
+  padding: 10px 0px;
+}
+
+.homeTextTitle span {
+  color: var(--primary);
+  font-size: 50px;
+}
+
+.homeTextSubtitle {
+  color: #717171;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.homeTextButton {
+  padding: 12px 10px;
+  background: var(--primary);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary);
+}
+
+.homeTextButton:hover {
+  color: var(--primary);
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3);
+  background: none;
+}
+
+.homeImage {
+  margin: 30px;
+}
+
+.homeImage img {
+  width: 400px;
+}
+
+.homeTextButton i {
+  padding-right: 10px;
+}
+
+/* SECTION KELOMPOK */
+/* SECTION KELOMPOK */
+/* SECTION KELOMPOK */
+
+.aboutTitle p {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.slideTwo {
+  padding: 140px 0px 0px 0px;
+  background-image: url(bg.jpg);
+  padding-bottom: 50px;
+  color: #333;
+}
+
+.slideTwo h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 3px;
+}
+
+.aboutTitle {
+  text-align: center;
+}
+
+.aboutTitle span {
+  font-size: 40px;
+}
+
+.slideTwo span {
+  color: var(--primary);
+}
+
+.sectionAbout {
+  display: flex;
+}
+
+.user1Item,
+.user2Item {
+  display: flex;
+}
+
+.user1Item ul li span {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.aboutUser1 {
+  width: 100%;
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3);
+  padding: 1%;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.user1Text ul li,
+.user2Text ul li {
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 15px;
+  list-style: none;
+}
+
+.aboutUser2 {
+  width: 100%;
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3);
+  padding: 1%;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.user1Text p,
+.user2Text p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.user1Text h1 span,
+.user2Text h1 span {
+  font-size: 30px;
+}
+
+.aboutImg {
+  width: 26%;
+  margin-right: 50px;
+}
+
+.aboutImg img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 0px solid #333;
+  filter: grayscale(100%);
+}
+
+.aboutImg img:hover {
+  filter: grayscale(0%);
+}
+
+.buttonBox {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.contactButton a {
+  padding: 10px 20px;
+  align-items: center;
+  background: var(--primary);
+  border-radius: 4px;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary);
+  text-decoration: none;
+}
+
+.contactButton a:hover {
+  color: var(--primary);
+  background: none;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+}
+
+.contactButton i {
+  padding-right: 5px;
+}
+
+.githubButton {
+  padding-left: 20px;
+}
+
+.githubButton,
+.instagramButton,
+.tweeterButton {
+  text-align: center;
+  color: var(--primary);
+
+  margin: 5px;
+}
+
+.aboutIcon {
+  display: flex;
+}
+
+.aboutIcon i {
+  color: #fff;
+  border-radius: 100%;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.aboutIcon i:hover {
+  color: var(--primary);
+  background: none;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+}
+
+/* SECTION TUGAS */
+/* SECTION TUGAS */
+/* SECTION TUGAS */
+
+.slideThree {
+  padding-top: 140px;
+  color: #333;
+}
+
+.sectionTask h1 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.pointMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pointMenu h1 {
+  font-size: 25px;
+  padding: 20px;
+}
+
+.pointMenuOne,
+.pointMenuTwo,
+.pointMenuThree,
+.pointMenuFour {
+  margin: 20px;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  color: var(--primary);
+  transition: all 0.3s ease;
+  background-color: var(--primary);
+}
+
+.pointMenuOne a,
+.pointMenuTwo a,
+.pointMenuThree a,
+.pointMenuFour a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.pointMenuOne i,
+.pointMenuTwo i,
+.pointMenuThree i,
+.pointMenuFour i {
+  padding-right: 10px;
+}
+
+.pointHeader1 {
+  text-align: center;
+  align-items: center;
+}
+
+.pointHeader1 h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.pointHeader1 img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+}
+
+.pointHeader1 span {
+  color: var(--primary);
+  font-size: 40px;
+}
+
+.pointHeader2 {
+  align-items: center;
+  justify-content: center;
+}
+
+.pointHeader2 h1 {
+  padding-top: 30px;
+}
+
+.pointHeader2 h2 {
+  padding: 20px 30px;
+  font-size: 14px;
+}
+
+.pointMenuOne:hover,
+.pointMenuTwo:hover,
+.pointMenuThree:hover,
+.pointMenuFour:hover {
+  background: none;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3);
+}
+
+.pointMenuOne a:hover,
+.pointMenuTwo a:hover,
+.pointMenuThree a:hover,
+.pointMenuFour a:hover {
+  color: var(--primary);
+}
+
+/* DEFINISI */
+/* DEFINISI */
+/* DEFINISI */
+.definisi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.definisiTitle h1 {
+  padding: 20px 0px;
+}
+
+.sectionDefinisi {
+  display: flex;
+  padding: 100px 50px;
+  justify-content: center;
+}
+
+.definisiBox {
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  block-size: fit-content;
+  max-width: 1000px;
+}
+
+.definisiTitle,
+.definisiText {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.definisiText p {
+  text-align: justify;
+  text-indent: 70px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+}
+
+.definisiText li {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  list-style: decimal;
+}
+
+/* MEDIA TRANSMISI */
+/* MEDIA TRANSMISI */
+/* MEDIA TRANSMISI */
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mediaTitle h1 {
+  padding: 20px 0px;
+}
+
+.sectionMedia {
+  display: flex;
+  padding: 100px 50px;
+  justify-content: center;
+}
+
+.mediaBox {
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  block-size: fit-content;
+  max-width: 1000px;
+}
+
+.mediaTitle,
+.mediaText {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.mediaText ul li {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  list-style: decimal;
+}
+
+.mediaImg {
+  justify-content: center;
+  display: flex;
+}
+
+.mediaText p {
+  text-indent: 70px;
+  text-align: justify;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+
+.mediaText ul ul li {
+  list-style: circle;
+  margin-top: 30px;
+}
+
+.mediaText ul ul h3 {
+  font-size: x-large;
+}
+
+/* Teknologi Telekomunikasi */
+/* Teknologi Telekomunikasi */
+/* Teknologi Telekomunikasi */
+
+.teknologi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teknologiTitle h1 {
+  padding: 20px 0px;
+}
+
+.sectionTeknologi {
+  display: flex;
+  padding: 100px 50px;
+  justify-content: center;
+}
+
+.teknologiBox {
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  block-size: fit-content;
+  max-width: 1000px;
+  padding-bottom: 4rem;
+}
+
+.teknologiTitle,
+.teknologiText {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.teknologiText p {
+  text-indent: 70px;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.teknologiText ol {
+  text-align: justify;
+  line-height: 2rem;
+
+}
+
+.teknologiText li {
+  text-align: justify;
+  line-height: 2rem;
+  margin-bottom: 20px;
+  list-style: decimal;
+}
+
+.exampleTeknologi img {
+  margin-top: 40px;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+/* GLOSARIUM SISTEM TELEKOMUNIKASI */
+/* GLOSARIUM SISTEM TELEKOMUNIKASI */
+/* GLOSARIUM SISTEM TELEKOMUNIKASI */
+.glosarium {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glosariumTitle h1 {
+  padding: 20px 0px;
+}
+
+.sectionGlosarium {
+  display: flex;
+  padding: 100px 50px;
+  justify-content: center;
+}
+
+.glosariumBox {
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  block-size: fit-content;
+  max-width: 1000px;
+}
+
+.glosariumTitle,
+.glosariumText {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.glosariumText p {
+  text-indent: 70px;
+  text-align: justify;
+  line-height: 2rem;
+  margin-bottom: 15px;
+}
+
+.glosariumText ol {
+  text-align: justify;
+  line-height: 2rem;
+  margin-bottom: 35px;
+}
+
+.glosariumText li {
+  text-align: justify;
+  line-height: 2rem;
+  margin-bottom: 35px;
+  list-style: decimal;
+}
+
+.glosariumText table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.glosariumText th,
+td {
+  border: 1px solid #b59797;
+  text-align: left;
+  padding: 8px;
+}
+
+.glosariumText th {
+  background-color: rgb(202, 1, 1);
+  color: whitesmoke;
+}
+
+.glosariumText h2 {
+  text-align: center;
+}
+
+/* REFERENSI */
+/* REFERENSI */
+/* REFERENSI */
+
+.referensi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.referensiTitle h1 {
+  padding: 20px 0px;
+}
+
+.sectionReferensi {
+  display: flex;
+  padding: 100px 50px;
+  justify-content: center;
+}
+
+.referensiBox {
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  block-size: fit-content;
+  width: 1000px;
+}
+
+.referensiTitle,
+.referensiText {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.referensiText p {
+  text-indent: 70px;
+  text-align: justify;
+  line-height: 2rem;
+  margin-bottom: 15px;
+}
+
+.referensiText ol {
+  text-align: justify;
+  line-height: 2rem;
+  margin-bottom: 20px;
+}
+
+.referensiText li {
+  text-align: justify;
+  line-height: 2rem;
+  list-style: decimal;
+}
+
+/* MEDIA SCREEN */
+/* MEDIA SCREEN */
+/* MEDIA SCREEN */
+
+@media (min-width: 999px) and (max-width: 1620px) {
+  /* SECTION TENTANG KITA */
+
+  .slideTwo {
+    margin: auto;
+  }
+
+  .about {
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    width: auto;
+  }
+  .sectionAbout {
+    display: block;
+  }
+
+  .aboutUser1,
+  .aboutUser2 {
+    padding: 20px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutImg {
+    width: 20%;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .aboutImg img {
+    height: 200px;
+    transition: 0.5s ease;
+    filter: grayscale(100%);
+  }
+
+  .aboutImg img:hover {
+    transform: none;
+    filter: none;
+  }
+}
+@media (max-width: 1700px) {
+  .home {
+    display: block;
+  }
+
+  .homeImage {
+    text-align: center;
+  }
+
+  .homeText {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 760px) {
+  html {
+    font-size: 40%;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .headerLogo {
+    display: none;
+  }
+
+  .home {
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .homeTextTitle {
+    font-size: 23px;
+  }
+
+  .homeTextSubtitle {
+    font-size: 17px;
+  }
+
+  .homeImage {
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .homeImage img {
+    width: 350px;
+  }
+
+  /* SECTION TENTANG KITA */
+
+  .sectionAbout {
+    display: block;
+  }
+}
+@media (min-width: 0px) and (max-width: 460px) {
+  .headerLogo {
+    display: none;
+  }
+
+  /* SECTION TASK */
+
+  .pointHeader1 h1 {
+    font-size: 18px;
+  }
+
+  .pointHeader1 img {
+    width: 250px;
+  }
+
+  .pointHeader2 h1 {
+    font-size: 18px;
+  }
+
+  .pointMenuOne,
+  .pointMenuTwo,
+  .pointMenuThree,
+  .pointMenuFour {
+    margin: 10px;
+    padding: 2px;
+    scale: 80%;
+  }
+}
